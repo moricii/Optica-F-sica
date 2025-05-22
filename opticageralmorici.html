@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Óptica Completa - Física na Veia</title>
+<style>
+  /* Reset básico */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    background: linear-gradient(120deg, #1a2a6c, #b21f1f, #fdbb2d);
+    color: #111;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  header {
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 4px solid #fdbb2d;
+    margin-bottom: 30px;
+  }
+  header h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 8px #000;
+  }
+  header p {
+    font-style: italic;
+    color: #fffde7;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+  main {
+    max-width: 960px;
+    margin: auto;
+    background: #fffde7cc;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 0 20px #ff6f61aa;
+  }
+  section {
+    margin-bottom: 50px;
+  }
+  section h2 {
+    border-left: 8px solid #ff6f61;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    color: #b22222;
+    text-shadow: 1px 1px 4px #aaa;
+  }
+  p, ul {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+  .formula {
+    background: #222;
+    border-left: 6px solid #ff6f61;
+    padding: 15px 25px;
+    margin: 20px 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'Courier New', monospace;
+    color: #f8bbd0;
+    box-shadow: 0 0 10px #f06292aa;
+    border-radius: 6px;
+    user-select: all;
+  }
+  .example {
+    background: #ffebee;
+    border-left: 6px solid #f44336;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-style: italic;
+    color: #c62828;
+  }
+  img.eye {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #ff6f61cc;
+  }
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    color: #555;
+    font-size: 0.9rem;
+  }
+  a {
+    color: #b22222;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  /* Responsivo */
+  @media(max-width: 700px){
+    main {
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    section h2 {
+      font-size: 1.6rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Óptica Completa: Luz, Lentes & Visão</h1>
+  <p>O universo visual revelado nas fórmulas, teorias e olhos que desvendam o mundo</p>
+</header>
+
+<main>
+
+  <section id="introducao">
+    <h2>Introdução à Óptica</h2>
+    <p>A <strong>Óptica</strong> é o ramo da física que estuda a luz, seu comportamento e suas interações com diferentes meios. É ela que explica desde o brilho das estrelas até a maneira como enxergamos o mundo ao nosso redor.</p>
+    <p>Ela divide-se em:</p>
+    <ul>
+      <li><strong>Óptica Geométrica:</strong> Estudo dos raios de luz, reflexão, refração, lentes e espelhos.</li>
+      <li><strong>Óptica Física:</strong> Considera a natureza ondulatória da luz e fenômenos como interferência e difração.</li>
+    </ul>
+    <p>Aqui, vamos focar principalmente na <strong>Óptica Geométrica</strong>, com um mergulho profundo nas leis da luz e seu impacto no nosso olho.</p>
+  </section>
+
+  <section id="indice-ref">
+    <h2>Índice de Refração</h2>
+    <p>O <strong>índice de refração</strong> é uma propriedade fundamental que mostra o quanto a luz “diminui” sua velocidade ao entrar em um meio diferente do vácuo.</p>
+    <p>Ele é definido como a razão entre a velocidade da luz no vácuo (<code>c ≈ 3,00 × 10⁸ m/s</code>) e a velocidade da luz no meio considerado (<code>v</code>):</p>
+    <div class="formula">n = \(\frac{c}{v}\)</div>
+    <p>Valores típicos de índice de refração:</p>
+    <ul>
+      <li>Vácuo: <code>n = 1,00</code> (referência)</li>
+      <li>Ar: <code>n ≈ 1,0003</code></li>
+      <li>Água: <code>n ≈ 1,33</code></li>
+      <li>Vidro comum: <code>n ≈ 1,50</code></li>
+      <li>Diamante: <code>n ≈ 2,42</code></li>
+    </ul>
+    <p><strong>Curiosidade:</strong> Quanto maior o índice, maior a luz desacelera ao entrar no meio e maior é a refração.</p>
+  </section>
+
+  <section id="lei-snell">
+    <h2>Lei de Snell – Refração</h2>
+    <p>A <strong>Lei de Snell</strong> é a regra que dita como a luz muda sua direção ao passar entre dois meios com índices diferentes:</p>
+    <div class="formula">n₁ · sen(θ₁) = n₂ · sen(θ₂)</div>
+    <p>Onde:</p>
+    <ul>
+      <li><code>n₁</code> e <code>n₂</code>: índices de refração dos meios 1 e 2.</li>
+      <li><code>θ₁</code>: ângulo de incidência (no primeiro meio).</li>
+      <li><code>θ₂</code>: ângulo de refração (no segundo meio).</li>
+    </ul>
+    <p><strong>Exemplo prático:</strong> Um raio de luz vindo do ar (<code>n=1,00</code>) entra na água (<code>n=1,33</code>), ele vai “dobrar” em direção à normal, diminuindo seu ângulo.</p>
+    <div class="example">
+      Se o raio incide com <code>θ₁ = 45°</code>, o ângulo refratado <code>θ₂</code> pode ser calculado usando a Lei de Snell:
+      <br>
+      \( 1,00 \times \sin 45° = 1,33 \times \sin θ₂ \) → \( \sin θ₂ = \frac{\sin 45°}{1,33} \approx 0,53 \) → \( θ₂ ≈ 32° \).
+    </div>
+  </section>
+
+  <section id="reflexao-total">
+    <h2>Reflexão Total Interna</h2>
+    <p>Quando a luz tenta sair de um meio mais refringente para um menos refringente com um ângulo de incidência alto demais, ela NÃO passa, e sim reflete totalmente para dentro do meio.</p>
+    <p>O ângulo mínimo para isso ocorrer é o <strong>ângulo crítico</strong> (<code>θc</code>), dado por:</p>
+    <div class="formula">θc = \(\arcsin \left(\frac{n_2}{n_1}\right)\)</div>
+    <p>com <code>
